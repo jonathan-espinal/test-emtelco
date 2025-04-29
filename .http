@@ -1,0 +1,25 @@
+### Obtener lista de vulnerabilidades
+GET http://127.0.0.1:8000/vulnerability-list/
+
+Accept: application/json
+
+
+### Marcar vulnerabilidades como corregidas
+POST http://127.0.0.1:8000/vulnerability-fix/
+Content-Type: application/json
+
+{
+    "cve_ids": ["CVE-1999-0095", "CVE-1999-0082"]
+}
+
+
+### Obtener lista de vulnerabilidades no corregidas
+GET http://127.0.0.1:8000/vulnerability-non-fixed-list/
+
+Accept: application/json
+
+
+### Conteo de vulnerabilidades
+GET http://127.0.0.1:8000/vulnerability-count
+
+Accept: application/json

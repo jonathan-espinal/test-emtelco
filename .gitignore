@@ -1,0 +1,37 @@
+# Archivos de entorno virtual
+venv/
+.env
+*.pyc
+__pycache__/
+db.sqlite3  # Evita subir la base de datos SQLite
+
+# Configuración y archivos de logs
+*.log
+*.pot
+*.pyc
+*.pyo
+
+# Configuración de Django y migraciones
+*.sqlite3
+/media/
+/static/
+.migrations/
+
+# Archivos de caché y dependencias
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Configuración de IDEs y herramientas
+.vscode/
+.idea/
+*.swp
+
+# Docker y contenedores
+docker-compose.override.yml
+*.dockerignore
+
+# Configuración específica de Django REST Framework
+coverage.xml
+htmlcov/
